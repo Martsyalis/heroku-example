@@ -46,7 +46,7 @@ app.get('/template', (req, res) => {
     <h1>The lunch today is: <br>${data.lunch}</h1>
     `
   }
-  const view = generateView({lunch: 'eggs'});
+  const view = generateView({lunch: 'pizza'});
   const website = generateMainTemplate(view)
   res.send(website)
 })
